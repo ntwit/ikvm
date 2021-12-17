@@ -45,7 +45,7 @@
         <if test="${platform::is-unix()}">
             <call target="ikvm-native-unix"/>
         </if>
-        <if test="${platform::is-win32()}">
+        <if test="${platform::is-windows()}">
             <call target="ikvm-native-win32"/>
         </if>
     </target>
