@@ -59,6 +59,7 @@
     </target>
     <target name="ikvm-native-win32" depends="version arch">
         <mkdir dir="Release-${cpu-arch}"/>
+		<sleep seconds="3"/>
         <rc rcfile="ikvm-native.rc" output="Release-${cpu-arch}/ikvm-native.res" />
         <cl outputdir="Release-${cpu-arch}" options="/O2 /D WIN32 /D NDEBUG /D _WINDLL /D _MBCS /GS /W3 /nologo /c">
             <sources>
